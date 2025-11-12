@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaza Emergency Relief | Donate Now</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background-color: #f8f9fa; color: #222; line-height: 1.6;}
+    header {
+      background: url('https://images.unsplash.com/photo-1609137144813-7d992d39a0f4?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 100vh;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.55);
+      z-index: 1;
+    }
+    header h1, header p, header a {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {font-size: 3rem; margin-bottom: 1rem;}
+    header p {font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem;}
+    header a {
+      background: #ff0000;
+      color: #fff;
+      padding: 15px 35px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    header a:hover {background: #cc0000;}
+
+    section {padding: 70px 10%; text-align: center;}
+
+    .about {
+      background: #fff;
+    }
+    .about h2 {font-size: 2rem; margin-bottom: 1rem;}
+    .about p {max-width: 800px; margin: 0 auto;}
+
+    .help {
+      background: #f1f1f1;
+    }
+    .help h2 {font-size: 2rem; margin-bottom: 2rem;}
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {transform: translateY(-5px);}
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {margin: 15px 0 10px;}
+    .card p {padding: 0 15px 20px;}
+
+    /* ✅ IMAGE GALLERY SECTION */
+    .gallery {
+      background: #fff;
+      padding: 70px 10%;
+    }
+    .gallery h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .gallery p {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery-container img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .donate {
+      background: url('https://images.unsplash.com/photo-1621293954906-3e38b6e5e9de?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: #fff;
+      position: relative;
+    }
+    .donate::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.65);
+      z-index: 1;
+    }
+    .donate-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .donate h2 {font-size: 2.2rem; margin-bottom: 1rem;}
+    .donate p {margin-bottom: 2rem;}
+    .donate a {
+      background: #ff0000;
+      color: #fff;
+      padding: 15px 40px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .donate a:hover {background: #cc0000;}
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {font-size: 2rem;}
+      header p {font-size: 1rem;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gaza Emergency Relief</h1>
+    <p>Thousands of innocent families in Gaza are suffering. Your support can bring them food, shelter, and medical care in this time of crisis.</p>
+    <a href="https://www.paypal.com/donate?hosted_button_id=2AX8W9V92VLM6" target="_blank" rel="noopener">DONATE NOW</a>
+  </header>
+
+  <section class="about">
+    <h2>About the Crisis</h2>
+    <p>
+      The humanitarian situation in Gaza is critical. Families have lost homes, children lack access to clean water and food, and hospitals are overwhelmed.
+      Every contribution you make helps deliver urgent supplies and hope to those who need it most.
+    </p>
+  </section>
+
+  <section class="help">
+    <h2>How You Can Help</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="gaza1.jpg" alt="Children waiting for food">
+        <h3>Provide Food Packs</h3>
+        <p>Help deliver essential food supplies to families facing hunger and starvation in Gaza.</p>
+      </div>
+      <div class="card">
+        <img src="gaza2.jpg" alt="Father holding child">
+        <h3>Medical Assistance</h3>
+        <p>Support emergency medical care for the injured and provide essential medicines for hospitals.</p>
+      </div>
+      <div class="card">
+        <img src="gaza3.jpg" alt="Mother carrying child">
+        <h3>Shelter for Families</h3>
+        <p>Help provide temporary shelter and safety for displaced families who lost their homes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ GALLERY SECTION -->
+  <section class="gallery">
+    <h2>Real Faces of Gaza</h2>
+    <p>These are the innocent souls your donations will help — every small act of kindness can bring them hope and relief.</p>
+
+    <div class="gallery-container">
+      <img src="iason-raissis-o_TT85Qdl6E-unsplash.jpg" alt="Children waiting for food">
+      <img src="iason-raissis-wK8HT7X_XV4-unsplash.jpg" alt="Father holding child">
+      <img src="iason-raissis-PgtUFsa9st8-unsplash.jpg" alt="Mother carrying child">
+    </div>
+  </section>
+
+  <section class="donate">
+    <div class="donate-content">
+      <h2>Make a Difference Today</h2>
+      <p>Your generosity can change lives. 100% of your donation goes directly to emergency aid for Gaza families in need.</p>
+      <a href="https://www.paypal.com/donate?hosted_button_id=2AX8W9V92VLM6" target="_blank" rel="noopener">Donate via PayPal</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gaza Relief Project. All Rights Reserved. | Supported by Global Humanitarian Volunteers</p>
+  </footer>
+</body>
+</html>
